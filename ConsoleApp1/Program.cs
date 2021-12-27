@@ -53,7 +53,10 @@ namespace ConsoleApp1
                 Console.WriteLine(totalCount);
                 try
                 {
-                    Pathfinder.driver.Navigate().GoToUrl(webUrl);
+                    Pathfinder.driver.Manage().Window.Maximize();
+
+                    Pathfinder.driver.Navigate()
+                    .GoToUrl(webUrl);;
 
                 }
                 catch
